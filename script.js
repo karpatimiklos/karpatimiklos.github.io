@@ -1,15 +1,15 @@
 $('button').on('click', (event) => {
 let egyNap = document.createElement('div');
 egyNap.classList.add('posts');
-
 let date =  $('input').val(); 
 let text =  $('textarea').val(); 
 $(egyNap).append('<b>' + date + '</b>');
 $(egyNap).append('<p>' + text + '</p>');
 $('article').append( egyNap );
-
-
 });
+
+
+
 
 let path = "posts/1";
 let dataToSave = {
@@ -17,7 +17,12 @@ let dataToSave = {
   text: "Some hilarious content, which proves how awesome I am."
 };
 fb.ref(path).set(dataToSave);
-
+let samePath = "posts/1";
+let updatedData = {
+  title: "My first edited and updated blog post",
+  text: "Some hilarious content again, which proves how awesome I am again."
+};
+fb.ref(samePath).set(updatedData);
 
 
 
