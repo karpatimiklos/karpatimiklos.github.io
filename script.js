@@ -6,6 +6,12 @@ let text =  $('textarea').val();
 $(egyNap).append('<b>' + date + '</b>');
 $(egyNap).append('<p>' + text + '</p>');
 $('article').append( egyNap );
+let samePath = "posts/1";
+let updatedData = {
+  title: date,
+  text: text
+};
+fb.ref(samePath).set(updatedData);
 });
 
 
@@ -19,8 +25,8 @@ let dataToSave = {
 fb.ref(path).set(dataToSave);
 let samePath = "posts/1";
 let updatedData = {
-  title: "My first edited and updated blog post",
-  text: "Some hilarious content again, which proves how awesome I am again."
+  title: date,
+  text: text
 };
 fb.ref(samePath).set(updatedData);
 
