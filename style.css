@@ -11,11 +11,14 @@ body{
 }
 h1{
     color: brown;
+    font-size: 400%;
     
 }
 
 h2{
-    margin:30px 10px 20px 20px;
+    margin:40px 10px 40px 20px;
+    color: brown ;
+    text-decoration: underline;
 }
 
 h4{
@@ -24,6 +27,30 @@ h4{
     
 }
 
+textarea{
+    background-color: rgb(  184, 140, 93 , 0.55); 
+}
+input{
+    background-color: rgb(  184, 140, 93 , 0.55); 
+}
+
+.gomb {
+    margin: auto;
+}
+
+#button{
+    background-color: #B88C5D  ;
+    border: none;
+    color: brown;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font: bolder;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 .posts{
     background: rgba(255, 255, 255, 0.25);
     width: 30%;
