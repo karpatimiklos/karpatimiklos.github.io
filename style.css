@@ -1,0 +1,33 @@
+
+
+body{
+    background-image: url("hatterkep.jpg");
+    
+}
+.full{
+    font-style: italic;
+   
+}
+h1{
+    color: brown;
+    
+}
+
+h2{
+    margin:30px 10px 20px 20px;
+}
+
+h4{
+    font-weight: bold;
+    margin: 5px;
+    
+}
+
+.posts{
+    background: rgba(255, 255, 255, 0.25);
+    width: 30%;
+    margin: 15px;
+    border: 1px solid rgb(29, 24, 24);
+    padding: 3px;
+    
+}
